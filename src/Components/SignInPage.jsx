@@ -1,6 +1,10 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { FaLongArrowAltUp } from "react-icons/fa";
+import codeAntLogo from "../assets/Images/codeAntLogo.png";
+import NameAndLogo from "../assets/Images/NameAndLogo.png";
+import Favicon from "../assets/Images/Favicon.png";
+import SignInImage from "../assets/Images/SignInImage.png";
 function SignInPage() {
   var numbers = [
     { number: "30+", text: "Language Support" },
@@ -11,11 +15,7 @@ function SignInPage() {
     <div className="h-screen w-full flex signInPage">
       <div className="leftSignIn relative h-full w-0 md:w-[50%]">
         <div className="codeAntlogo hidden md:block absolute left-0 bottom-0 md:w-52 lg:w-60">
-          <img
-            className="w-full"
-            src="./src/assets/Images/codeAntLogo.png"
-            alt=""
-          />
+          <img className="w-full" src={codeAntLogo} alt="" />
         </div>
         <div className="leftsidething relative h-full full">
           <div className="bothbox absolute w-fit top-[40%] flex items-center justify-center translate-y-[-50%] left-[56%] translate-x-[-50%]">
@@ -23,7 +23,7 @@ function SignInPage() {
               <div className="uppertextbar h-[40%] border-b-[0.1vw] border-b-[#dddff1] w-full gap-2 items-center px-4 flex">
                 <img
                   className="md:w-[5%] lg:w-[7%]"
-                  src="./src/assets/Images/Favicon.png"
+                  src={Favicon}
                   alt=""
                 />
                 <h1 className="md:text-sm lg:text-lg font-[700]">
@@ -33,7 +33,10 @@ function SignInPage() {
               <div className="lowernumbers h-[60%] w-[100%] flex items-center  px-4 justify-between">
                 {numbers.map((elem, idx) => {
                   return (
-                    <div key={idx} className="flex flex-col text-center md:gap-0 lg:gap-1">
+                    <div
+                      key={idx}
+                      className="flex flex-col text-center md:gap-0 lg:gap-1"
+                    >
                       <span className="md:text-xs lg:text-xl leading-[1]  font-[600]">
                         {elem.number}
                       </span>
@@ -47,7 +50,11 @@ function SignInPage() {
             </div>
             <div className="centerboxbelowbox bg-[#ffffff] hidden md:block rounded-3xl absolute md:h-[13vw] lg:h-[10.6vw] w-48 md:top-[140%] lg:top-[148%] translate-y-[-50%] left-[80%] translate-x-[-50%]">
               <div className="belowboxupperpart h-[50%] w-full flex justify-between items-center px-4">
-                <img className="md:w-10" src="./src/assets/Images/SignInImage.png" alt="" />
+                <img
+                  className="md:w-10"
+                  src={SignInImage}
+                  alt=""
+                />
                 <div className="flex flex-col text-center gap-1">
                   <div className="text-sm text-[#0049C6] flex items-center leading-[1]  font-[600]">
                     <FaLongArrowAltUp />
@@ -63,7 +70,9 @@ function SignInPage() {
                   <span className=" md:text-xs lg:text-sm leading-[1]  font-[600]">
                     Issues Fixed
                   </span>
-                  <span className=" md:text-xl lg:text-3xl leading-[1] font-[700]">500k+</span>
+                  <span className=" md:text-xl lg:text-3xl leading-[1] font-[700]">
+                    500k+
+                  </span>
                 </div>
               </div>
             </div>
@@ -76,7 +85,7 @@ function SignInPage() {
             <div className="nameandlogo lg:w-36 md:w-52 w-60">
               <img
                 className="w-full"
-                src="./src/assets/Images/NameAndLogo.png"
+                src= {NameAndLogo}
                 alt=""
               />
             </div>

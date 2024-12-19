@@ -2,16 +2,23 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import RepoIcon from "../assets/Images/RepoIcon.png";
+import codeIcon from "../assets/Images/codeIcon.png";
+import cloudIcon from "../assets/Images/cloudIcon.png";
+import howtoUseIcon from "../assets/Images/howtoUseIcon.png";
+import settingsIcon from "../assets/Images/settingsIcon.png";
+import phoneIcon from "../assets/Images/phoneIcon.png";
+import logOutIcon from "../assets/Images/logOutIcon.png";
 export default function Navbar() {
   const [menuClick, setMenuClick] = useState(false);
   const menulinks = [
-    { text: "Repositories", photo: "./src/assets/Images/RepoIcon.png" },
-    { text: "AI Code Review", photo: "./src/assets/Images/codeIcon.png" },
-    { text: "Cloud Security", photo: "./src/assets/Images/cloudIcon.png" },
-    { text: "How to Use", photo: "./src/assets/Images/howtoUseIcon.png" },
-    { text: "Settings", photo: "./src/assets/Images/settingsIcon.png" },
-    { text: "Support", photo: "./src/assets/Images/phoneIcon.png" },
-    { text: "Logout", photo: "./src/assets/Images/logOutIcon.png" },
+    { text: "Repositories", photo: RepoIcon },
+    { text: "AI Code Review", photo: codeIcon },
+    { text: "Cloud Security", photo: cloudIcon },
+    { text: "How to Use", photo: howtoUseIcon },
+    { text: "Settings", photo: settingsIcon },
+    { text: "Support", photo: phoneIcon },
+    { text: "Logout", photo: logOutIcon },
   ];
   return (
     <div className="fixed sm:hidden flex z-[500] h-24 w-screen top-0 ">
@@ -41,8 +48,8 @@ export default function Navbar() {
         } h-[45vh] w-full flex px-4 gap-5 flex-col justify-start bg-[#ffffff]`}
       >
         <div className="dropdown border-[0.05vw] px-4 py-2 flex text-[#474c56] items-center justify-between  rounded-lg border-[#dddff1]">
-            <h1 className="text-xl text-[#101111]">SwarajSingh</h1>
-            <IoIosArrowDown />
+          <h1 className="text-xl text-[#101111]">SwarajSingh</h1>
+          <IoIosArrowDown />
         </div>
         <div className="menulinks ">
           {menulinks.map((elem, idx) => {
@@ -51,8 +58,14 @@ export default function Navbar() {
                 key={idx}
                 className="menuitem py-2 flex items-center gap-4 px-4"
               >
-                <img className="w-6 h-6 object-contain " src={elem.photo} alt="" />
-                <h1 className="text-xl text-[#414156] font-[400]" >{elem.text}</h1 >
+                <img
+                  className="w-6 h-6 object-contain "
+                  src={elem.photo}
+                  alt=""
+                />
+                <h1 className="text-xl text-[#414156] font-[400]">
+                  {elem.text}
+                </h1>
               </div>
             );
           })}

@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import gitlab from "../assets/Images/gitlab.png";
+import SSO from "../assets/Images/SSO.png";
 function SelfHostedOptions() {
   return (
     <div className="flex flex-col lg:gap-2 gap-3">
       {[
         {
           text: "Self Hosted GitLab",
-          photo: "./src/assets/Images/gitlab.png",
+          photo: gitlab,
         },
         {
           text: "Sign in with SSO",
-          photo: "./src/assets/Images/SSO.png",
+          photo: SSO,
         },
       ].map((elem, idx) => {
         return (

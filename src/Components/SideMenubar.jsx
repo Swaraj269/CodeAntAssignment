@@ -7,6 +7,7 @@ import { FaBook } from "react-icons/fa6";
 import { CiSettings } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { IoIosLogOut } from "react-icons/io";
+import NameAndLogo from "../assets/Images/NameAndLogo.png";
 function SideMenubar() {
   const menulinks = [
     { text: "Repositories", photo: <AiOutlineHome /> },
@@ -21,7 +22,7 @@ function SideMenubar() {
     <div className="hidden sm:hidden md:flex  border-r-[0.1vw] md:w-[30%] border-r-[#dddff1] sm:flex flex-col justify-between h-screen lg:w-[20%] md:py-6 md:px-4  lg:py-7 lg:px-5">
       <div className="  flex flex-col md:gap-6 lg:gap-7">
         <div className="logodiv w-[65%]">
-          <img src="./src/assets/Images/NameAndLogo.png" alt="" />
+          <img src={NameAndLogo} alt="" />
         </div>
         <div className="dropdown cursor-pointer w-[94%] border-[0.05vw] md:px-3 md:py-3 lg:px-[1vw] lg:py-2 flex text-[#474c56] items-center justify-between  rounded-lg border-[#dddff1]">
           <h1 className=" md:text-sm lg:text-sm font-[400] text-[#101111]">

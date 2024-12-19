@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import githubicon from "../assets/Images/github.png";
+import bitbucket from "../assets/Images/bitbucket.png";
+import AzureDevops from "../assets/Images/AzureDevops.png";
+import gitlab from "../assets/Images/gitlab.png";
+
 
 function SAASOption() {
   return (
@@ -7,18 +12,18 @@ function SAASOption() {
       {[
         {
           text: "Sign in with Github",
-          photo: "./src/assets/Images/github.png",
+          photo: githubicon,
         },
         {
           text: "Sign in with Bitbucket",
-          photo: "./src/assets/Images/bitbucket.png",
+          photo: bitbucket,
         },
         {
             text: "Sign in with Azure Devops",
-            photo: "./src/assets/Images/AzureDevops.png",
+            photo: AzureDevops ,
         },{
             text: "Sign in with GitLab",
-            photo: "./src/assets/Images/gitlab.png",
+            photo: gitlab,
         }
       ].map((elem, idx)=>{
         return(
