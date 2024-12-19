@@ -9,6 +9,7 @@ import howtoUseIcon from "../assets/Images/howtoUseIcon.png";
 import settingsIcon from "../assets/Images/settingsIcon.png";
 import phoneIcon from "../assets/Images/phoneIcon.png";
 import logOutIcon from "../assets/Images/logOutIcon.png";
+import NameAndLogo from "../assets/Images/NameAndLogo.png";
 export default function Navbar() {
   const [menuClick, setMenuClick] = useState(false);
   const menulinks = [
@@ -24,11 +25,7 @@ export default function Navbar() {
     <div className="fixed sm:hidden flex z-[500] h-24 w-screen top-0 ">
       <div className="h-24 w-full bg-[#ffffff] flex items-center justify-between px-4 ">
         <div className="img">
-          <img
-            className="w-44"
-            src="./src/assets/Images/NameAndLogo.png"
-            alt=""
-          />
+          <img className="w-44" src={NameAndLogo} alt="" />
         </div>
         <div
           onClick={() => setMenuClick((prev) => !prev)}
