@@ -1,8 +1,11 @@
-# React + Vite
+# CodeAnt Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello,
 
-Currently, two official plugins are available:
+This is my submission for the Frontend Developer Intern position at Codeant AI. I have built the project using React for the functionality and Tailwind CSS for styling. All the pages are fully designed and responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I would like to thank the Codeant AI team for this opportunity. You can check out the website here: -> " https://code-ant-assignment-sandy.vercel.app/ "
+
+Note: On the sign-in page, you can click on any option to access the dashboard.
+
+Thank you!
