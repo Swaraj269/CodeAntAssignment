@@ -22,7 +22,7 @@ export default function Navbar() {
     { text: "Logout", photo: logOutIcon },
   ];
   return (
-    <div className="fixed sm:hidden flex z-[500] h-24 w-screen top-0 ">
+    <div className="fixed md:hidden flex z-[500] h-24 w-screen top-0 ">
       <div className="h-24 w-full bg-[#ffffff] flex items-center justify-between px-4 ">
         <div className="img">
           <img className="w-44" src={NameAndLogo} alt="" />
@@ -41,8 +41,8 @@ export default function Navbar() {
       ></div>
       <div
         className={`menu absolute top-[100%] z-[-1] ${
-          menuClick ? "translate-y-[0%]" : "translate-y-[-100%]"
-        } h-[45vh] w-full flex px-4 gap-5 flex-col justify-start bg-[#ffffff]`}
+          menuClick ? "translate-y-[0%]" : "translate-y-[-120%]"
+        } h-[100vw] w-full flex px-4 gap-5 flex-col justify-start bg-[#ffffff]`}
       >
         <div className="dropdown border-[0.05vw] px-4 py-2 flex text-[#474c56] items-center justify-between  rounded-lg border-[#dddff1]">
           <h1 className="text-xl text-[#101111]">SwarajSingh</h1>

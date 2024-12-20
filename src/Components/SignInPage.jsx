@@ -105,7 +105,7 @@ function SignInPage() {
                   };
                 }}
                 to="/"
-                className="lg:text-sm text-xl flex items-center justify-center font-[600] lg:px-20 py-3 px-14 md:border-[0.1vw] border-[0.4vw] border-[#dddee1] rounded-md"
+                className=" lg:text-sm text-md flex items-center justify-center font-[600] lg:px-20 py-3 px-14 md:border-[0.1vw] border-[0.4vw] border-[#dddee1] rounded-md"
               >
                 SAAS
               </NavLink>
